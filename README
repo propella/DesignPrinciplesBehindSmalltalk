@@ -2,7 +2,7 @@
 
 <a href="http://www.flickr.com/photos/propella/4371352635/" title="ingalls_new by propella, on Flickr"><img src="http://farm5.static.flickr.com/4044/4371352635_c8fed444f1.jpg" width="375" height="500" alt="ingalls_new" /></a>
 
-前回 Mobipocket Creator を使った mobi ファイルの作り方について書きました。http://d.hatena.ne.jp/propella/20100215/p1 今回は Kindlegen を使って電子書籍を作る方法です。Kindlegen は Window と linux で動くコマンドラインツールで、原始的なだけに mobi ファイルの作成には何が必要なのかという事がより理解しやすいと思います。題材として短い方が良いと思うので Daniel H. H. Ingalls の Design Principles Behind Smalltalk を使います。
+<a href="http://d.hatena.ne.jp/propella/20100215/p1">前回</a> Mobipocket Creator を使った mobi ファイルの作り方について書きました。 今回は Kindlegen http://www.amazon.com/gp/feature.html?docId=1000234621 を使って電子書籍を作る方法です。Kindlegen は Window と linux で動くコマンドラインツールで、原始的なだけに mobi ファイルの作成には何が必要なのかという事がより理解しやすいと思います。題材として短い方が良いと思うので Daniel H. H. Ingalls の Design Principles Behind Smalltalk を使います。
 
 >||
 $ mkdir ingalls
