@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package unique-identifier="uid">
+  <metadata>
+    <dc-metadata xmlns:dc="http://purl.org/metadata/dublin_core"
+    xmlns:oebpackage="http://openebook.org/namespaces/oeb-package/1.0/">
+
+      <dc:Title>Design Principles Behind Smalltalk</dc:Title>
+      <dc:Language>en-us</dc:Language>
+      <!-- dc:Identifier id="uid">2402C08241</dc:Identifier -->
+      <dc:Creator>Daniel H. H. Ingalls</dc:Creator>
+      <!-- dc:Publisher>Pubulish test</dc:Publisher -->
+      <!-- dc:Subject BASICCode="FIC000000">General Fiction</dc:Subject -->
+      <dc:Description>from the BYTE August 1981 Special Issue on Smalltalk</dc:Description>
+      <dc:Date>02/19/2010</dc:Date>
+    </dc-metadata>
+    <x-metadata>
+      <output encoding="utf-8" content-type="text/x-oeb1-document">
+      </output>
+      <EmbeddedCover>smalltalk_files/dpbs_figure1.gif</EmbeddedCover>
+      <SRP Currency="USD">0.99</SRP>
+      <!-- Demo>FourMillionSample.prc</Demo -->
+    </x-metadata>
+  </metadata>
+  <manifest>
+    <item id="item1" media-type="text/x-oeb1-document" href="smalltalk.html"></item>
+    <item id="toc" media-type="application/x-dtbncx+xml" href="toc.ncx"></item>
+  </manifest>
+  <spine toc="toc">
+    <itemref idref="item1" />
+  </spine>
+  <tours></tours>
+  <guide>
+    <reference type="toc" title="Table of Contents" href="smalltalk.html%23TOC"></reference>
+    <reference type="start" title="Startup Page" href="smalltalk.html%23Introduction"></reference>
+  </guide>
+</package>

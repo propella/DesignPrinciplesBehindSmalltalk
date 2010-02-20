@@ -25,7 +25,17 @@ Copied from <a href="http://users.ipa.net/~dwighth/smalltalk/byte_aug81/design_p
 Scanned in and converted to  HTML (with recreated graphics) by Dwight 
 Hughes.<br>
 </font>
-<p>
+
+<a name="TOC"/><h2>Contents</h2>
+<p><a href="#Introduction">Introduction</a></p>
+<p><a href="#Language">Language</a></p>
+<p><a href="#Communicating_Objects">Communicating Objects</a></p>
+<p><a href="#Organization">Organization</a></p>
+<p><a href="#User_Interface">User Interface</a></p>
+<p><a href="#Future_Work">Future Work</a></p>
+<mbp:pagebreak />
+
+<a name="Introduction"/><p>
   The purpose of 
 the Smalltalk project is to provide computer support for the creative spirit in 
 everyone. Our work flows from a vision that includes a creative individual and 
@@ -65,8 +75,10 @@ thus infer a general principle of design:
   <DD><B>Good Design:</B><FONT face="Courier New"><FONT size=-1> 
   </FONT></FONT><I>A system should be built with a minimum set of unchangeable 
   parts; those parts should be as general as possible; and all parts of the 
-  system should be held in a uniform framework.</I> </DD></DL><B><FONT 
-size=+1>Language</FONT></B> <BR>&nbsp;&nbsp;&nbsp; In designing a language for 
+  system should be held in a uniform framework.</I> </DD></DL>
+<a name="Language"/>
+<h2>Language</h2>
+&nbsp;&nbsp;&nbsp; In designing a language for 
 use with computers, we do not have to look far to find helpful hints. Everything 
 we know about how people think and communicate is applicable. The mechanisms of 
 human thought and communication have been engineered for millions of years, and 
@@ -128,7 +140,10 @@ href="#figure_1">figure
       transmitted in a given message. Implicit communication includes the 
       relevant assumptions common to the two 
 beings.</I></TD></TR></TBODY></TABLE></CENTER>
-<DL><B><FONT size=+1>Communicating Objects</FONT></B> <BR>&nbsp;&nbsp;&nbsp; 
+<a name="Communicating_Objects"/>
+<h2>Communicating Objects</h2>
+<DL>
+&nbsp;&nbsp;&nbsp; 
   The mind observes a vast universe of experience, both immediate and recorded. 
   One can derive a sense of oneness with the universe simply by letting this 
   experience be, just as it is. However, if one wishes to participate, literally 
@@ -208,7 +223,10 @@ objects may have local storage and access to other shared information which
 comprise the implicit context of all communication. For instance, the message + 
 5 (add five) carries an implicit assumption that the augend is the present value 
 of the number receiving the message. 
-<DL><B><FONT size=+1>Organization</FONT></B> <BR>&nbsp;&nbsp;&nbsp; A uniform 
+<a name="Organization"/>
+<h2>Organization</h2>
+<DL>
+&nbsp;&nbsp;&nbsp; A uniform 
   metaphor provides a framework in which complex systems can be built. Several 
   related organizational principles contribute to the successful management of 
   complexity. To begin with:</DL>
@@ -325,8 +343,10 @@ machine establishes an object-oriented model for storage, a message-oriented
 model for processing, and a bitmap model for visual display of information. 
 Through the use of microcode, and ultimately hardware, system performance can be 
 improved dramatically without any compromise to the other virtues of the system. 
-
-<P><B><FONT size=+1>User Interface</FONT></B> <BR>&nbsp;&nbsp;&nbsp; A user 
+<a name="User_Interface"/>
+<h2>User Interface</h2>
+<DL>
+&nbsp;&nbsp;&nbsp; A user 
 interface is simply a language in which most of the communication is visual. 
 Because visual presentation overlaps heavily with established human culture, 
 esthetics plays a very important role in this area. Since all capability of a 
@@ -379,7 +399,10 @@ naturally incorporated into the Smalltalk language:
 such. The necessary primitive operations, such as reading a page from the disk, 
 are incorporated as primitive methods in response to otherwise normal Smalltalk 
 messages. 
-<DL><B><FONT size=+1>Future Work</FONT></B> <BR>&nbsp;&nbsp;&nbsp; As might be 
+<a name="Future_Work"/>
+<h2>Future Work</h2>
+<DL>
+  &nbsp;&nbsp;&nbsp; As might be 
   expected, work remains to be done on Smalltalk. The easiest part to describe 
   is the continued application of the principles in this paper. For example, the 
   Smalltalk-80 system falls short in its factoring because it supports only 

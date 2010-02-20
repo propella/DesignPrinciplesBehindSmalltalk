@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+
+   <docTitle><text>Design Principles Behind Smalltalk</text></docTitle>
+
+   <navMap>
+      <navPoint id="navPoint-1" playOrder="1">
+         <navLabel><text>Contents</text></navLabel><content src="smalltalk.html#TOC"/>
+      </navPoint>
+      <navPoint id="navPoint-2" playOrder="2">
+         <navLabel><text>Introduction</text></navLabel><content src="smalltalk.html#Introduction"/>
+      </navPoint>
+      <navPoint id="navPoint-3" playOrder="3">
+         <navLabel><text>Language</text></navLabel><content src="smalltalk.html#Language"/>
+      </navPoint>
+      <navPoint id="navPoint-4" playOrder="4">
+         <navLabel><text>Communicating Objects</text></navLabel><content src="smalltalk.html#Communicating_Objects"/>
+      </navPoint>
+      <navPoint id="navPoint-5" playOrder="5">
+         <navLabel><text>Organization</text></navLabel><content src="smalltalk.html#Organization"/>
+      </navPoint>
+      <navPoint id="navPoint-6" playOrder="6">
+         <navLabel><text>User Interface</text></navLabel><content src="smalltalk.html#User_Interface"/>
+      </navPoint>
+      <navPoint id="navPoint-7" playOrder="7">
+         <navLabel><text>Future Work</text></navLabel><content src="smalltalk.html#Future_Work"/>
+      </navPoint>
+   </navMap>
+</ncx>
