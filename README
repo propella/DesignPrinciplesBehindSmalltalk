@@ -2,10 +2,7 @@
 
 <a href="http://www.flickr.com/photos/propella/4371352635/" title="ingalls_new by propella, on Flickr"><img src="http://farm5.static.flickr.com/4044/4371352635_c8fed444f1.jpg" width="375" height="500" alt="ingalls_new" /></a>
 
-前回 Mobipocket Creator を使った mobi ファイルの作り方について書きました。http://d.hatena.ne.jp/propella/20100215/p1 今回は Kindlegen を使って電子書籍を作る方法です。Kindlegen は Window と linux で動くコマンドラインツールで、原始的なだけに mobi ファイルの作成には何が必要なのかという事がより理解しやすいと思います。
-
-題材として短い方が良いと思うので Daniel H. H. Ingalls の Design
-Principles Behind Smalltalk を使います。
+前回 Mobipocket Creator を使った mobi ファイルの作り方について書きました。http://d.hatena.ne.jp/propella/20100215/p1 今回は Kindlegen を使って電子書籍を作る方法です。Kindlegen は Window と linux で動くコマンドラインツールで、原始的なだけに mobi ファイルの作成には何が必要なのかという事がより理解しやすいと思います。題材として短い方が良いと思うので Daniel H. H. Ingalls の Design Principles Behind Smalltalk を使います。
 
 >||
 $ mkdir ingalls
@@ -22,9 +19,7 @@ $ kindlegen.exe smalltalk.html
 
 <a href="http://www.flickr.com/photos/propella/4372102388/" title="ingalls_old by propella, on Flickr"><img src="http://farm3.static.flickr.com/2482/4372102388_2049c51f6a_m.jpg" width="180" height="240" alt="ingalls_old" /></a>
 
-単純な HTML なのでこれでもそれなりに読めますが、練習のために目次を付け
-てみます。最初機械的に付けようかと思ったのですが、HTML が意外と汚いので
-手で付ける事にしました。まず、目次はこんなかんじ。
+単純な HTML なのでこれでもそれなりに読めますが、練習のために目次を付けてみます。最初機械的に付けようかと思ったのですが、HTML が意外と汚いので手で付ける事にしました。まず、目次はこんなかんじ。
 
 >|html|
 <a name="TOC"/><h2>Contents</h2>
@@ -37,19 +32,14 @@ $ kindlegen.exe smalltalk.html
 <mbp:pagebreak />
 ||<
 
-mbp:pagebreak というのは mobi 独自のタグで、改ページだそうです。あとは
-適当に name タグを付けます。たとえば Language の所はこんな具合です。
+mbp:pagebreak というのは mobi 独自のタグで、改ページだそうです。あとは適当に name タグを付けます。たとえば Language の所はこんな具合です。
 
 >|html|
 <a name="Language"/>
 <h2>Language</h2>
 ||<
 
-なんか font タグをヘッダに使っていて気持ち悪いですが、あまり気にしない
-事にします。目次自体にも TOC という名前を付けます。
-
-次に、toc.ncx ファイルを作ります。これを作るとカーソルキーで章を早送り
-出来るようになります。内容は目次と大体同じです。
+FONT タグを見出しに使っていたりすると後が面倒なので、この時点で少しずつ HTML が論理的になるよう掃除してゆきます。目次自体にも TOC という名前を付けます。次に、toc.ncx ファイルを作ります。これを作るとカーソルキーで章を早送り出来るようになります。内容は目次と大体同じです。
 
 >|xml|
 <?xml version="1.0" encoding="UTF-8"?>
@@ -85,11 +75,7 @@ mbp:pagebreak というのは mobi 独自のタグで、改ページだそうで
 </ncx>
 ||<
 
-さて、ここまで来たら本格的にメタ情報を作ります。メタ情報というのは作者
-名やタイトル等の事です。先ほどは html から自動抽出されましたが、自分で
-指定する事も出来ます。これは smalltalk.odf という名前で作ります。
-toc.ncx もここで指定します。<guide> を指定すると、Kindle の Go To
-Beginning や Table of Contents といった特別のメニューが有効になります。
+さて、ここまで来たら本格的に書誌情報(メタ情報)を作ります。書誌情報というのは作者名やタイトル等の事です。先ほどは html から自動抽出されましたが、自分で指定する事も出来ます。これは smalltalk.opf という名前で作ります。toc.ncx もここで指定します。<guide> を指定すると、Kindle の Go To Beginning や Table of Contents といった特別のメニューが有効になります。
 
 >|xml|
 <?xml version="1.0" encoding="utf-8"?>
@@ -126,8 +112,18 @@ Beginning や Table of Contents といった特別のメニューが有効にな
 </package>
 ||<
 
-そんなわけでこのファイルを kindlegen に指定すれば書籍が完成します。
+ほかにも HTML を掃除したり色々必要ですが、そんなわけでこのファイルを kindlegen に指定すれば書籍が完成します。
 
 >||
-$ kindlegen.exe smalltalk.odf
+$ kindlegen.exe smalltalk.opf
 ||<
+
+ソースコードを以下に置きます。また、<a href="http://github.com/propella/DesignPrinciplesBehindSmalltalk/raw/master/smalltalk.mobi">出来た本</a>もレポジトリに置いておきます。
+
+http://github.com/propella/DesignPrinciplesBehindSmalltalk
+
+** まとめ
+- 本の内容を HTML で書く。
+- ナビゲーション用に toc.ncx ファイルを作る。
+- 書誌情報、html と toc.ncx へのリンクを opf ファイルに書く。
+- kindlegen で opf ファイルを指定する。
