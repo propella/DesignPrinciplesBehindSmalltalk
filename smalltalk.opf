@@ -6,10 +6,7 @@
 
       <dc:Title>Design Principles Behind Smalltalk</dc:Title>
       <dc:Language>en-us</dc:Language>
-      <!-- dc:Identifier id="uid">2402C08241</dc:Identifier -->
       <dc:Creator>Daniel H. H. Ingalls</dc:Creator>
-      <!-- dc:Publisher>Pubulish test</dc:Publisher -->
-      <!-- dc:Subject BASICCode="FIC000000">General Fiction</dc:Subject -->
       <dc:Description>from the BYTE August 1981 Special Issue on Smalltalk</dc:Description>
       <dc:Date>02/19/2010</dc:Date>
     </dc-metadata>
@@ -18,7 +15,6 @@
       </output>
       <EmbeddedCover>smalltalk_files/dpbs_figure1.gif</EmbeddedCover>
       <SRP Currency="USD">0.99</SRP>
-      <!-- Demo>FourMillionSample.prc</Demo -->
     </x-metadata>
   </metadata>
   <manifest>

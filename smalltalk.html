@@ -1,8 +1,14 @@
 <html> <head>
-<link rel="stylesheet" type="text/css" href="http://www.cs.virginia.edu/~cs655/cs655.css" title="style1">
 <title>
 Design Principles Behind Smalltalk
 </title>
+<style type="text/css">
+h2 {
+	text-align: center;
+	margin-bottom: 20;
+}
+</style>
+
 </head>
 
 <body bgcolor="#FFFFFF">
@@ -25,6 +31,7 @@ Copied from <a href="http://users.ipa.net/~dwighth/smalltalk/byte_aug81/design_p
 Scanned in and converted to  HTML (with recreated graphics) by Dwight 
 Hughes.<br>
 </font>
+<mbp:pagebreak />
 
 <a name="TOC"/><h2>Contents</h2>
 <p><a href="#Introduction">Introduction</a></p>
@@ -76,6 +83,7 @@ thus infer a general principle of design:
   </FONT></FONT><I>A system should be built with a minimum set of unchangeable 
   parts; those parts should be as general as possible; and all parts of the 
   system should be held in a uniform framework.</I> </DD></DL>
+<mbp:pagebreak />
 <a name="Language"/>
 <h2>Language</h2>
 &nbsp;&nbsp;&nbsp; In designing a language for 
@@ -125,21 +133,21 @@ different technique for storage management. It is not just an extensible
 hierarchy of data types, or a graphical user interface. It is all of these 
 things and anything else that is needed to support the interactions shown in <A 
 href="#figure_1">figure 
-1</A>.<A name=figure_1></A> <BR>&nbsp; 
+1</A>.
+<A name=figure_1></A> <BR>&nbsp; 
 <CENTER>
-<TABLE border=0 cellPadding=0 cellSpacing=0 cols=1 width="50%">
-  <TBODY>
-  <TR>
-    <TD align=middle><IMG height=291 src="smalltalk_files/dpbs_figure1.gif" 
-      width=496></TD></TR>
-  <TR>
-    <TD><B>Figure 1:</B><FONT face="Courier New"><FONT size=-1> 
+<p><IMG height=291 src="smalltalk_files/dpbs_figure1.gif" width=496></p>
+
+<p><B>Figure 1:</B><FONT face="Courier New"><FONT size=-1> 
       </FONT></FONT><I>The scope of language design. Communication between two 
       people (or between one person and a computer) includes communication on 
       two levels. Explicit communication includes the information that is 
       transmitted in a given message. Implicit communication includes the 
       relevant assumptions common to the two 
-beings.</I></TD></TR></TBODY></TABLE></CENTER>
+beings.</I></p>
+</CENTER>
+
+<mbp:pagebreak />
 <a name="Communicating_Objects"/>
 <h2>Communicating Objects</h2>
 <DL>
@@ -223,6 +231,7 @@ objects may have local storage and access to other shared information which
 comprise the implicit context of all communication. For instance, the message + 
 5 (add five) carries an implicit assumption that the augend is the present value 
 of the number receiving the message. 
+<mbp:pagebreak />
 <a name="Organization"/>
 <h2>Organization</h2>
 <DL>
@@ -235,16 +244,13 @@ internal details of any other component.</I>
 
      <A name=figure_2></A> <BR>&nbsp; 
 <CENTER>
-<TABLE border=0 cellPadding=0 cellSpacing=0 cols=1 width="40%">
-  <TBODY>
-  <TR>
-    <TD align=middle><IMG height=212 src="smalltalk_files/dpbs_figure2.gif" 
-      width=433></TD></TR>
-  <TR>
-    <TD><B>Figure 2:</B> <I>System complexity. As the number of components in 
+<p><IMG height=212 src="smalltalk_files/dpbs_figure2.gif" width=433></p>
+
+<p><B>Figure 2:</B> <I>System complexity. As the number of components in 
       a system increases, the chances for unwanted interaction increase rapidly. 
       Because of this, a computer language should be designed to minimize the 
-      possibilities of such interdependence.</I></TD></TR></TBODY></TABLE></CENTER>
+      possibilities of such interdependence.</I></p>
+</CENTER>
 <P>&nbsp;&nbsp;&nbsp; This principle is depicted in <A 
 href="#figure_2">figure 
 2</A>. If there are <I>N</I> components in a system, then there are roughly 
@@ -343,6 +349,7 @@ machine establishes an object-oriented model for storage, a message-oriented
 model for processing, and a bitmap model for visual display of information. 
 Through the use of microcode, and ultimately hardware, system performance can be 
 improved dramatically without any compromise to the other virtues of the system. 
+<mbp:pagebreak />
 <a name="User_Interface"/>
 <h2>User Interface</h2>
 <DL>
@@ -399,6 +406,7 @@ naturally incorporated into the Smalltalk language:
 such. The necessary primitive operations, such as reading a page from the disk, 
 are incorporated as primitive methods in response to otherwise normal Smalltalk 
 messages. 
+<mbp:pagebreak />
 <a name="Future_Work"/>
 <h2>Future Work</h2>
 <DL>
@@ -433,7 +441,6 @@ evolving. Help is on the way.
 <table width=100%>
 <tr>
 <td width=10% valign=top>
-<a href="http://www.cs.virginia.edu/~cs655"><img src="http://www.cs.virginia.edu/~cs655/cs655.gif" align=center alt="CS 655" width=57 height=56 border=0></a>
 
 </td>
 <td valign=middle>
